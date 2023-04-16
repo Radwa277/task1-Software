@@ -16,5 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get(
     '/student', 
     function () {
-    return view('task');
-});
+
+        $arr=[
+            'student'=> ['radwa','Khinany','mahmoud','ahmed','sobhy',
+            'radwa','Khinany','mahmoud','ahmed','sobhy',
+            'khaled','hady','radwa','Khinany','mahmoud','ahmed','sobhy',
+            'radwa','Khinany','mahmoud','ahmed','sobhy','radwa','Khinany','mahmoud','ahmed','sobhy',
+            'radwa','Khinany','mahmoud','ahmed','sobhy',]
+        ];
+        return view('task',$arr);
+        });
+
+
+
+
