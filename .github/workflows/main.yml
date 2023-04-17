@@ -11,10 +11,9 @@ jobs:
 
 
     steps:
-      - name: "testing github action"
-        run: pwd
-      - name: "testing printing"
-        run:  echo radwa
+      - uses: actions/checkout@v3
+      - name: "Login to docker hub"
+        run: docker login --username radwakhonany --password dckr_pat_1elRKlVo86ycoV0nWdSGSjbrySU
 
      
      
