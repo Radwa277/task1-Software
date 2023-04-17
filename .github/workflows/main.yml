@@ -1,1 +1,20 @@
+on:
+  push:
+    branches:
+      - master:
 
+
+
+jobs:
+  build:
+    runs_on: ubuntu_latest
+
+
+    steps:
+      - name: "testing github action"
+        run: pwd
+      - name: "testing printing"
+        run:  echo radwa
+
+     
+     
